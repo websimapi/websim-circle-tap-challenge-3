@@ -146,24 +146,18 @@ button:active {
 }
 
 /* Share Icon Button Style */
-.replay-player button[aria-label*="render" i] {
-    padding: 0;
-    width: 42px; /* Standard Remotion player button size */
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.replay-player button[aria-label*="render" i] svg {
+.replay-player button[aria-label*="render" i] .r-ph-download-simple,
+.replay-player button[aria-label*="render" i] .r-ph-spinner,
+.replay-player button[aria-label*="render" i] .r-ph-check-circle,
+.replay-player button[aria-label*="render" i] .r-ph-x-circle {
     display: none !important;
 }
 
-.replay-player button[aria-label*="render" i]::before {
+.replay-player button[aria-label*="render" i]::after {
     font-family: "Font Awesome 6 Free";
     content: "\f1e0"; /* fa-share-nodes icon */
     font-weight: 900;
-    font-size: 18px; /* Adjusted size to fit button */
+    font-size: 20px;
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
